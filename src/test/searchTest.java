@@ -24,7 +24,7 @@ public class searchTest {
   public void successSearch() {
 	  String productName = "iPhone";
 	  searchProcedures test = new searchProcedures(); 
-	  test.searchWithWord( driver, productName);
+	  test.searchWithWord( driver, productName); 
 	  
 	  //*Validate that there are results found*
 	  Assert.assertTrue(driver.getPageSource().contains("1-16 of over 1,000 results for"));
